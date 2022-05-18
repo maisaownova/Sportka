@@ -127,10 +127,10 @@
         }
     </style>
     <script>
-        
+
         function oznac(bunka) {
-            
-            if (bunka.className != "tip" &&bunka.parentElement.parentElement.getElementsByClassName("tip").length < 6) {/**/
+
+            if (bunka.className != "tip" && bunka.parentElement.parentElement.getElementsByClassName("tip").length < 6) {/**/
                 bunka.classList.add("tip");
 
                 if (bunka.classList.contains("los")) {
@@ -144,22 +144,22 @@
             }
         }
         var vylosovanaCisla = new Array();
-       
+
         function losuj() {
             let nahodneCislo;
-           
+
             if (vylosovanaCisla.length != 0) { vymazCisla(); }
             do {
                 nahodneCislo = Math.floor(Math.random() * 49 + 1);
                 if (vylosovanaCisla.indexOf(nahodneCislo) == -1) {
-                   
+
                     vylosovanaCisla.push(nahodneCislo);
                 }
             } while (vylosovanaCisla.length < 6);
-            
+
             zobrazVylosovanaCisla();
             zobrazSerazenaCisla();
-            
+
             zobrazCisla();
             zobrazVysledek();
         }
@@ -175,7 +175,7 @@
             }
         }
         function vytvorTabulkuOld() {
-            
+
             let tabulka = "<table>";
             for (let r = 0; r < 7; r++) {
                 tabulka += "<tr>";
@@ -187,9 +187,9 @@
             tabulka += "</table>";
             document.querySelector("section").innerHTML = "<article id='1'><h2>TABULKA 1</h2></article>";
             document.querySelector("article").innerHTML /**/ +=/**/ tabulka;/**/
-            
+
         }
-        
+
         function vytvorTabulku() {
             pocetArticle = document.querySelector("section").childElementCount;
             let article = document.createElement("article");
@@ -220,20 +220,20 @@
             for (let i = 0; i < pocetLosovanych; i++) {
                 document.querySelectorAll(".los")[0].classList.remove("los");
             }
-            
+
         }
         function zobrazCisla() {
             for (let i = 0; i < 6; i++) {
                 for (let j = 0; j < document.getElementsByTagName("table").length - 2; j++) {
-                    
+
                     document.querySelectorAll("td")[vylosovanaCisla[i] - 1 + 49 * j].classList.add("los");
-                    
+
                 }
             }
         }
         function zobrazVysledek() {
             let poctyUhodnutych = new Array();
-            
+
             for (let i = 0; i < document.querySelectorAll("table").length - 2; i++) {
                 poctyUhodnutych.push(document.querySelectorAll("table")[i].querySelectorAll("td.tip.los").length);
             }
@@ -244,14 +244,14 @@
 
 <body onload="vytvorTabulku()">
     <script>
-        
+
     </script>
     <header>
         <h1><a href="index.html">Sportka</a></h1>
     </header>
     <main>
         <section class="tickety">
-            
+
         </section>
         <script>
         </script>
