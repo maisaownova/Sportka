@@ -7,125 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sportka ticket</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        header {
-            padding: 1% 0px 1%;
-            margin: 10px 0px;
-            text-align: center;
-        }
-
-        header h1 {
-            text-align: center;
-            font-size: 4em;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        body {
-            background-color: darkorange;
-        }
-
-        table {
-            border-spacing: 5px;
-            /*proti tomu border collapse*/
-            margin: 0px 20px;
-            /**/
-        }
-
-        td {
-            background-color: white;
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            border-radius: 5px;
-            cursor: pointer;
-            color: rgb(123, 33, 0);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        td:hover {
-            /**/
-            background-color: yellow;
-            transition: 0.2s;
-        }
-
-        section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h2 {
-            font-size: 2em;
-            color: white
-        }
-
-        p {
-            color: rgb(123, 33, 0);
-        }
-
-        h2,
-        p {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-
-        div {
-            margin: 20px 0px;
-        }
-
-        button {
-            font-size: 1em;
-            color: rgb(123, 33, 0);
-            border-color: rgb(123, 33, 0);
-            width: 160px;
-            height: 40px;
-            background-color: white;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            border-color: unset;
-            background-color: rgb(197, 105, 0);
-        }
-
-        @media(min-width:1200px) {
-            section {
-                flex-direction: row;
-                justify-content: center;
-            }
-        }
-
-        .tip {
-            background-color: yellow;
-        }
-
-        .los {
-            background-color: red;
-            color: white;
-            border-radius: 50%;
-            /*new*/
-        }
-
-        .los.tip {
-            background-color: green;
-
-        }
-
-        #vylosovano td,
-        #serazeno td {
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="styly.css">
     <script>
 
         function oznac(bunka) {
@@ -247,7 +129,7 @@
 
     </script>
     <header>
-        <h1><a href="index.html">Sportka</a></h1>
+        <h1><a href="index.html">Sportka Maisa</a></h1>
     </header>
     <main>
         <section class="tickety">
