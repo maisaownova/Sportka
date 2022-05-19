@@ -4,11 +4,12 @@ button {
     border-color: rgb(123, 33, 0);
     width: 160px;
     height: 40px;
-    background-color: white;
+    background-color: $primary-color-link;
     border-radius: 5px;
-}
 
-button:hover {
-    border-color: unset;
-    background-color: rgb(197, 105, 0);
+    &:hover {
+        border-color: unset;
+        background-color: rgb(197, 105, 0);
+    }
+
 }

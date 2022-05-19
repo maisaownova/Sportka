@@ -4,11 +4,10 @@
 
 .los {
     background-color: red;
-    color: white;
+    color: $primary-color-link;
     border-radius: 50%;
-    /*new*/
-}
 
-.los.tip {
-    background-color: green;
+    .tip {
+        background-color: green;
+    }
 }
