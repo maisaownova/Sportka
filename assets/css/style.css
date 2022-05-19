@@ -1,3 +1,12 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  color: #7b2100;
+}
+
 header {
   padding: 1% 0px 1%;
   margin: 10px 0px;
@@ -10,38 +19,22 @@ header h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
-a {
-  text-decoration: none;
+h2 {
+  font-size: 2em;
   color: white;
 }
 
+h2,
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div {
+  margin: 20px 0px;
+}
+
 body {
-  background-color: orange;
-}
-
-table {
-  border-spacing: 5px;
-  /*proti tomu border collapse*/
-  margin: 0px 20px;
-  /**/
-}
-
-td {
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #7b2100;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-td:hover {
-  /**/
-  background-color: yellow;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  background-color: darkorange;
 }
 
 section {
@@ -57,6 +50,18 @@ section {
           align-items: center;
 }
 
+@media (min-width: 1200px) {
+  section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,22 +75,31 @@ article {
           align-items: center;
 }
 
-h2 {
-  font-size: 2em;
-  color: white;
+table {
+  border-spacing: 5px;
+  margin: 0px 20px;
 }
 
-p {
+table td {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
   color: #7b2100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2,
-p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+table td:hover {
+  background-color: yellow;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-div {
-  margin: 20px 0px;
+table td #vylosovano td,
+table td #serazeno td {
+  border-radius: 50%;
 }
 
 button {
@@ -103,18 +117,6 @@ button:hover {
   background-color: #c56900;
 }
 
-@media (min-width: 1200px) {
-  section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .tip {
   background-color: yellow;
 }
@@ -128,10 +130,5 @@ button:hover {
 
 .los.tip {
   background-color: green;
-}
-
-#vylosovano td,
-#serazeno td {
-  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

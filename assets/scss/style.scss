@@ -1,122 +1,30 @@
-$bodyColor: orange;
-header {
-    padding: 1% 0px 1%;
-    margin: 10px 0px;
-    text-align: center;
-
-    h1 {
-        text-align: center;
-        font-size: 4em;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-body {
-    background-color: $bodyColor;
-}
-
-table {
-    border-spacing: 5px;
-    /*proti tomu border collapse*/
-    margin: 0px 20px;
-    /**/
-}
-
-td {
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    color: rgb(123, 33, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    &:hover {
-        /**/
-        background-color: yellow;
-        transition: 0.2s;
-    }
-
-}
+@import "src/_elements.scss";
+@import "src/_objects.scss";
+@import "src/_components.scss";
+@import "src/_utilities.scss";
 
 
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-h2 {
-    font-size: 2em;
-    color: white
-}
 
-p {
-    color: rgb(123, 33, 0);
-}
 
-h2,
-p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-div {
-    margin: 20px 0px;
-}
 
-button {
-    font-size: 1em;
-    color: rgb(123, 33, 0);
-    border-color: rgb(123, 33, 0);
-    width: 160px;
-    height: 40px;
-    background-color: white;
-    border-radius: 5px;
-}
 
-button:hover {
-    border-color: unset;
-    background-color: rgb(197, 105, 0);
-}
 
-@media(min-width:1200px) {
-    section {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
 
-.tip {
-    background-color: yellow;
-}
 
-.los {
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    /*new*/
-}
 
-.los.tip {
-    background-color: green;
 
-}
 
-#vylosovano td,
-#serazeno td {
-    border-radius: 50%;
-}
+
+
+
+
+
+
+
+
+
+

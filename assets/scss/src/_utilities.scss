@@ -1,0 +1,14 @@
+.tip {
+    background-color: yellow;
+}
+
+.los {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    /*new*/
+}
+
+.los.tip {
+    background-color: green;
+}

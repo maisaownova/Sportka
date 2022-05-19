@@ -1,0 +1,51 @@
+div {
+    margin: 20px 0px;
+}
+
+body {
+    background-color: darkorange;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width:1200px) {
+    section {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+table {
+    border-spacing: 5px;
+    margin: 0px 20px;
+
+    td {
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        color: rgb(123, 33, 0);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        &:hover {
+            background-color: yellow;
+            transition: 0.2s;
+        }
+
+        #vylosovano td,
+        #serazeno td {
+            border-radius: 50%;
+        }
+    }
+}
