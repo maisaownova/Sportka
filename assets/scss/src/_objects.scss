@@ -42,7 +42,7 @@ table {
 
         #vylosovano td,
         #serazeno td {
-            border-radius: 50%;
+            @include border-radius(50%);
         }
     }
 }

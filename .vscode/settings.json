@@ -10,5 +10,6 @@
 		   "format": "compressed",
 		   "savePath": "/assets/css"
 	   }
-   ]
+   ],
+   "liveSassCompile.settings.autoprefix": null
 }

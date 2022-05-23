@@ -5,7 +5,7 @@
 .los {
     background-color: red;
     color: $primary-color-link;
-    border-radius: 50%;
+    @include border-radius(50%);
 
     .tip {
         background-color: green;
